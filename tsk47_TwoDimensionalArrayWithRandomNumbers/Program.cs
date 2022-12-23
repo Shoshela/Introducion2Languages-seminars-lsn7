@@ -34,5 +34,12 @@ void PrintArray(double[,] array) // Метод печати массива
     }
 }
 
+int OutIn(string message) // Метод вывода сообщения и чтения с экрана
+{
+    Console.Write(message);
+    int result = Convert.ToInt32(Console.ReadLine());
+    return result;
+}
+
 FillArray(matrix);
 PrintArray(matrix);
